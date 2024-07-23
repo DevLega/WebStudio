@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Studio</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="btn" data-modal-close>
+                <img src="./img/close.svg">
+            </button>
+            <form>
+                <h2 class="modal-form-title">Залиште свої дані, ми вам передзвонимо</h2>
+                <div class="modal-form-inputs">
+                    <label class="modal-form-label">
+                        <p class="modal-form-label-name">Ім'я</p>
+                        <input class="modal-form-label-input-name" type="name" name="name" required minlength="2" src="/img/close.svg">
+                    </label>
+                    <label class="modal-form-label">
+                        <p class="modal-form-label-telephone">Телефон</p>
+                        <input class="modal-form-label-input-telephone" type="telephone" name="telephone">
+                    </label>
+                    <label class="modal-form-label">
+                        <p class="modal-form-label-mail">Пошта</p>
+                        <input class="modal-form-label-input-mail" type="email" name="email">
+                    </label>
+                    <label class="modal-form-label">
+                        <p class="modal-form-label-comment">Коментар</p>
+                        <input class="modal-form-label-input-comment" type="comment" name="comment">
+                    </label>
+                </div>
+            </form>
+            <div class="modal-checkbox">
+                <input class="modal-checkbox-check" type="checkbox" id="agreement" name="agreement" required>
+                <label class="modal-checkbox-agreement">Погоджуюся з розсилкою та приймаю <a class="modal-form-checkbox-agreement-link" href="#">Умови договору</a></label>
+            </div>
+            <button class="modal-btn-submit">Відправити</button>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-blue-text">Web</span><span class="logo-black-text">Studio</span>
+            </a>
+            <nav class="nav">
+                <a class="nav-link" href="index.html">Студія</a>
+                <a class="nav-link" href="portfolio.html">Портфоліо</a>
+                <a class="nav-link" href="#">Контакти</a>
+            </nav>
+            <div class="contact-info">
+                <a class="contact-info-email">info@devstudio.com</a>
+                <a class="contact-info-phone">+38 096 111 11 11</a>
+            </div>
+        </div>
+    </header>
+    <section class="hero">
+        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+        <button class="hero-button" data-modal-open>Замовити послугу</button>
+    </section>
+    <section class="features">
+        <div class="container">
+            <ul class="features-list">
+                <li class="features-item">
+                    <h2 class="features-item-title">УВАГА ДО ДЕТАЛЕЙ</h2>
+                    <p class="features-item-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+                </li>
+                <li class="features-item">
+                    <h2 class="features-item-title">ПУНКТУАЛЬНІСТЬ</h2>
+                    <p class="features-item-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+                </li>
+                <li class="features-item">
+                    <h2 class="features-item-title">ПЛАНУВАННЯ</h2>
+                    <p class="features-item-text">Так само консультація з широким активом значною мірою зумовлює.</p>
+                </li>
+                <li class="features-item">
+                    <h2 class="features-item-title">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
+                    <p class="features-item-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+                </li>
+            </ul>
+        </div>
+        <h1 class="services-title">Чим ми займаємося</h1>
+        <div class="services-gallery">
+            <img src="img/Self.png" class="services-gallery-img" alt="Self">
+            <img src="img/Self(1).png" class="services-gallery-img" alt="Self">
+            <img src="img/Self(2).png" class="services-gallery-img" alt="Self">
+        </div>
+    </section>
+    <section class="team">
+        <h1 class="team-title">Наша команда</h1>
+        <ul class="team-list">
+            <li class="team-member">
+                <img src="img/people.jpg" class="team-member-img" alt="Ігор Дем'яненко">
+                <p class="team-member-name">Ігор Дем'яненко</p>
+                <p class="team-member-role">Product Designer</p>
+            </li>
+            <li class="team-member">
+                <img src="img/people(1).jpg" class="team-member-img" alt="Ольга Рєпіна">
+                <p class="team-member-name">Ольга Рєпіна</p>
+                <p class="team-member-role">Frontend Developer</p>
+            </li>
+            <li class="team-member">
+                <img src="img/people(2).jpg" class="team-member-img" alt="Микола Тарасов">
+                <p class="team-member-name">Микола Тарасов</p>
+                <p class="team-member-role">Marketing</p>
+            </li>
+            <li class="team-member">
+                <img src="img/people(3).jpg" class="team-member-img" alt="Михайло Єрмаков">
+                <p class="team-member-name">Михайло Єрмаков</p>
+                <p class="team-member-role">UI Designer</p>
+            </li>
+        </ul>
+    </section>
+    <footer class="footer">
+        <h1 class="footer-logo">
+            <span class="logo-blue-text">Web</span><span class="logo-white-text">Studio</span>
+        </h1>
+        <ul class="footer-contact">
+            <li class="footer-contact-item">
+                <p class="footer-contact-text">м. Київ, пр-т Лесі Українки, 26</p>
+                <p class="footer-contact-text">info@devstudio.com</p>
+                <p class="footer-contact-text">+38 096 111 11 11</p>
+            </li>
+        </ul>
+    </footer>
+    <script src="./js/modal.js"></script>
+</body>
+</html>

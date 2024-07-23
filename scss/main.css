@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-family: sans-serif;
+  background-color: #f9f9fd;
+  color: #fff;
+}
+
+.content {
+  padding: 50px;
+}
+.content-circle {
+  width: 150px;
+  height: 150px;
+  padding: 4px 8px;
+  background-color: #008080;
+  border-radius: 50%;
+  animation-name: moveCircle;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+@keyframes moveCircle {
+  0% {
+    transform: translatex(0);
+  }
+  100% {
+    transform: translatex(calc(100vw - 150px));
+  }
+}/*# sourceMappingURL=main.css.map */
