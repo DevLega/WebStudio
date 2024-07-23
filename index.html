@@ -5,46 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Studio</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="./scss/main.css">
+    <link rel="stylesheet" href="./css/main.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-            <button class="btn" data-modal-close>
-                <img src="./img/close.svg">
-            </button>
-            <form>
-                <h2 class="modal-form-title">Залиште свої дані, ми вам передзвонимо</h2>
-                <div class="modal-form-inputs">
-                    <label class="modal-form-label">
-                        <p class="modal-form-label-name">Ім'я</p>
-                        <input class="modal-form-label-input-name" type="name" name="name" required minlength="2" src="/img/close.svg">
-                    </label>
-                    <label class="modal-form-label">
-                        <p class="modal-form-label-telephone">Телефон</p>
-                        <input class="modal-form-label-input-telephone" type="telephone" name="telephone">
-                    </label>
-                    <label class="modal-form-label">
-                        <p class="modal-form-label-mail">Пошта</p>
-                        <input class="modal-form-label-input-mail" type="email" name="email">
-                    </label>
-                    <label class="modal-form-label">
-                        <p class="modal-form-label-comment">Коментар</p>
-                        <input class="modal-form-label-input-comment" type="comment" name="comment">
-                    </label>
-                </div>
-            </form>
-            <div class="modal-checkbox">
-                <input class="modal-checkbox-check" type="checkbox" id="agreement" name="agreement" required>
-                <label class="modal-checkbox-agreement">Погоджуюся з розсилкою та приймаю <a class="modal-form-checkbox-agreement-link" href="#">Умови договору</a></label>
-            </div>
-            <button class="modal-btn-submit">Відправити</button>
-        </div>
-    </div>
 
     <header class="header">
         <div class="container">
@@ -62,10 +28,45 @@
             </div>
         </div>
     </header>
+
     <section class="hero">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
         <button class="hero-button" data-modal-open>Замовити послугу</button>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="btn" data-modal-close>
+                    <img src="./img/close.svg">
+                </button>
+                <form>
+                    <h2 class="modal-form-title">Залиште свої дані, ми вам передзвонимо</h2>
+                    <div class="modal-form-inputs">
+                        <label class="modal-form-label">
+                            <p class="modal-form-label-name">Ім'я</p>
+                            <input class="modal-form-label-input-name" type="name" name="name" required minlength="2" src="/img/close.svg">
+                        </label>
+                        <label class="modal-form-label">
+                            <p class="modal-form-label-telephone">Телефон</p>
+                            <input class="modal-form-label-input-telephone" type="telephone" name="telephone">
+                        </label>
+                        <label class="modal-form-label">
+                            <p class="modal-form-label-mail">Пошта</p>
+                            <input class="modal-form-label-input-mail" type="email" name="email">
+                        </label>
+                        <label class="modal-form-label">
+                            <p class="modal-form-label-comment">Коментар</p>
+                            <input class="modal-form-label-input-comment" type="comment" name="comment">
+                        </label>
+                    </div>
+                </form>
+                <div class="modal-checkbox">
+                    <input class="modal-checkbox-check" type="checkbox" id="agreement" name="agreement" required>
+                    <label class="modal-checkbox-agreement">Погоджуюся з розсилкою та приймаю <a class="modal-form-checkbox-agreement-link" href="#">Умови договору</a></label>
+                </div>
+                <button class="modal-btn-submit">Відправити</button>
+            </div>
+        </div>
     </section>
+
     <section class="features">
         <div class="container">
             <ul class="features-list">
@@ -86,15 +87,17 @@
                     <p class="features-item-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                 </li>
             </ul>
-        </div>
-        <h1 class="services-title">Чим ми займаємося</h1>
+            <h1 class="services-title">Чим ми займаємося</h1>
         <div class="services-gallery">
             <img src="img/Self.png" class="services-gallery-img" alt="Self">
             <img src="img/Self(1).png" class="services-gallery-img" alt="Self">
             <img src="img/Self(2).png" class="services-gallery-img" alt="Self">
         </div>
+    </div>
     </section>
+
     <section class="team">
+        <div class="container">
         <h1 class="team-title">Наша команда</h1>
         <ul class="team-list">
             <li class="team-member">
@@ -118,7 +121,9 @@
                 <p class="team-member-role">UI Designer</p>
             </li>
         </ul>
+        </div>
     </section>
+    
     <footer class="footer">
         <h1 class="footer-logo">
             <span class="logo-blue-text">Web</span><span class="logo-white-text">Studio</span>
