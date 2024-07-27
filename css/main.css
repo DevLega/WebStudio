@@ -214,7 +214,6 @@
 }
 .footer .footer-logo {
   padding-top: 60px;
-  padding-left: 215px;
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
@@ -231,7 +230,6 @@
 .footer .footer-contact {
   list-style: none;
   width: 231px;
-  margin-left: 210px;
   margin-top: 20px;
 }
 .footer .footer-contact .footer-contact-item .footer-contact-text {
