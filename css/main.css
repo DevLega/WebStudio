@@ -65,7 +65,7 @@
 }
 
 .hero {
-  background: #2F303A;
+  background-image: url(/img/studio/HeroBG.png);
   width: 100%;
   padding: 200px 0;
 }
@@ -115,6 +115,19 @@
 }
 .features .features-list .features-item {
   width: 270px;
+}
+.features .features-list .features-item .item-div {
+  width: 270px;
+  background: #F5F4FA;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+.features .features-list .features-item .item-svg {
+  width: 70px;
+  height: 70px;
+  padding-top: 25px;
+  padding-left: 100px;
 }
 .features .features-list .features-item .features-item-title {
   font-family: "Roboto", sans-serif;
@@ -175,14 +188,16 @@
   display: flex;
   flex-wrap: wrap;
   width: 1170px;
-  height: 368px;
+  height: 428px;
   list-style: none;
   justify-content: space-between;
 }
 .team .team-list .team-member {
   background-color: #FFFFFF;
   width: 270px;
-  height: 368px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1411764706);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1215686275);
 }
 .team .team-list .team-member .team-member-img {
   width: 270px;
@@ -206,6 +221,62 @@
   letter-spacing: 0.03em;
   text-align: center;
   color: #757575;
+}
+.team .team-list .team-member .team-links {
+  display: flex;
+  width: 206px;
+  height: 44px;
+  justify-content: space-around;
+  padding-top: 28px;
+  padding-left: 32px;
+}
+.team .team-list .team-member .team-link {
+  fill: #AFB1B8;
+  height: 44px;
+  width: 44px;
+}
+.team .team-list .team-member .team-link:hover {
+  fill: #FFFFFF;
+}
+.team .team-list .team-member .team-link-wrapper {
+  border-radius: 50%;
+}
+.team .team-list .team-member .team-link-wrapper:hover {
+  background-color: #2196F3;
+}
+
+.clients-text {
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42.19px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding-top: 94px;
+}
+.clients-list {
+  list-style: none;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.clients-item {
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  margin-bottom: 94px;
+}
+.clients-item:hover {
+  border: 1px solid #2196F3;
+}
+.clients-item:hover .clients-svg {
+  fill: #2196F3;
+}
+.clients-svg {
+  fill: #AFB1B8;
+  width: 170px;
+  height: 90px;
 }
 
 .footer {

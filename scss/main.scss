@@ -72,7 +72,7 @@
 }
 
 .hero {
-    background: #2F303A;
+    background-image: url(/img/studio/HeroBG.png);
     width: 100%;
     padding: 200px 0;
 
@@ -125,6 +125,19 @@
         .features-item {
             width: 270px;
 
+            .item-div {
+                width: 270px;
+                background: #F5F4FA;
+                height: 120px;
+                margin-bottom: 30px;
+                border-radius: 4px;
+            }
+            .item-svg {
+                width: 70px;
+                height: 70px;
+                padding-top: 25px;
+                padding-left: 100px;
+            }
             .features-item-title {
                 font-family: "Roboto", sans-serif;
                 font-size: 14px;
@@ -192,14 +205,17 @@
         display: flex;
         flex-wrap: wrap;
         width: 1170px;
-        height: 368px;
+        height: 428px;
         list-style: none;
         justify-content: space-between;
 
         .team-member {
             background-color: #FFFFFF;
             width: 270px;
-            height: 368px;
+            box-shadow: 0px 2px 1px 0px #00000033;
+            box-shadow: 0px 1px 1px 0px #00000024;
+            box-shadow: 0px 1px 3px 0px #0000001F;
+
 
             .team-member-img {
                 width: 270px;
@@ -226,9 +242,75 @@
                 text-align: center;
                 color: #757575;
             }
+            .team-links {
+                display: flex;
+                width: 206px;
+                height: 44px;
+                justify-content: space-around;
+                padding-top: 28px;
+                padding-left: 32px;
+            }
+            .team-link {
+                fill: #AFB1B8;
+                height: 44px;
+                width: 44px;
+
+                &:hover {
+                    fill: #FFFFFF;
+                }
+
+                &-wrapper {
+                    border-radius: 50%;
+                    &:hover {
+                        background-color: #2196F3;
+                    }
+                }
+            }
         }
     }
 }
+
+.clients {
+   
+    &-text {
+        font-family: Roboto;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 42.19px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        padding-top: 94px;
+    }
+
+    &-list {
+        list-style: none;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &-item {
+        border-radius: 4px;
+        width: 170px;
+        height: 92px;
+        border: 1px solid #AFB1B8;
+        margin-bottom: 94px;
+
+        &:hover {
+            border: 1px solid #2196F3
+        }
+        &:hover .clients-svg {
+            fill: #2196F3;
+        }
+    }
+
+    &-svg {
+        fill: #AFB1B8;
+        width: 170px;
+        height: 90px;
+    }
+}
+
 
 .footer {
     background-color: #2F303A;
