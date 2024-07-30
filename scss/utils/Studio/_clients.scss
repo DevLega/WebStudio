@@ -1,0 +1,40 @@
+.clients {
+   
+    &-text {
+        font-family: Roboto;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 42.19px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        padding-top: 94px;
+    }
+
+    &-list {
+        list-style: none;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &-item {
+        border-radius: 4px;
+        width: 170px;
+        height: 92px;
+        border: 1px solid #AFB1B8;
+        margin-bottom: 94px;
+
+        &:hover {
+            border: 1px solid #2196F3
+        }
+        &:hover .clients-svg {
+            fill: #2196F3;
+        }
+    }
+
+    &-svg {
+        fill: #AFB1B8;
+        width: 170px;
+        height: 90px;
+    }
+}

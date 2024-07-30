@@ -1,0 +1,44 @@
+.footer {
+    background-color: #2F303A;
+    height: 252px;
+
+    .footer-logo {
+        padding-top: 60px;
+        font-family: "Raleway", sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 30.52px;
+        letter-spacing: 0.03em;
+        text-align: left;
+
+        .logo-blue-text {
+            color: #2196F3;
+        }
+
+        .logo-white-text {
+            color: white;
+        }
+    }
+
+    .footer-contact {
+        list-style: none;
+        width: 231px;
+        margin-top: 20px;
+
+        .footer-contact-item {
+            .footer-contact-text {
+                padding: 9px;
+                font-family: "Roboto", sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0.03em;
+                color: #FFFFFF99;
+
+                &.address {
+                    color: white;
+                }
+            }
+        }
+    }
+}

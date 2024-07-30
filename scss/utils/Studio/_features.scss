@@ -1,0 +1,100 @@
+.features {
+    padding-bottom: 80px;
+
+    .features-list {
+        display: flex;
+        flex-wrap: wrap;
+        width: 1170px;
+        list-style: none;
+        justify-content: space-between;
+        padding-top: 94px;
+        margin: 0 auto;
+
+        .features-item {
+            width: 270px;
+
+            .item-div {
+                width: 270px;
+                background: #F5F4FA;
+                height: 120px;
+                margin-bottom: 30px;
+                border-radius: 4px;
+            }
+            .item-svg {
+                width: 70px;
+                height: 70px;
+                padding-top: 25px;
+                padding-left: 100px;
+            }
+            .features-item-title {
+                font-family: "Roboto", sans-serif;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 16.41px;
+                letter-spacing: 0.03em;
+                text-align: left;
+                color: #212121;
+            }
+
+            .features-item-text {
+                font-family: "Roboto", sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0.03em;
+                text-align: left;
+                color: #757575;
+            }
+        }
+    }
+
+    .services-title {
+        padding-top: 94px;
+        font-family: "Roboto", sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 42.19px;
+        letter-spacing: 0.03em;
+        text-align: center;
+    }
+
+    .services-gallery {
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 1170px;
+        margin: 50px auto 0;
+
+        .services-item {
+            position: relative;
+            width: 100%;
+            max-width: 360px;
+            height: auto;
+    
+            .services-gallery-img {
+                width: 100%;
+                height: auto;
+            }
+
+            .overlay {
+                position: absolute;
+                top: 216px;
+                left: 0;
+                width: 100%;
+                height: 70px;
+                background: rgba(47, 48, 58, 0.8);
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: Roboto;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 16.41px;
+                letter-spacing: 0.03em;
+                text-align: center;
+            }
+        }
+    }
+}
