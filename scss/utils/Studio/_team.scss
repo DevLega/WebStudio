@@ -54,6 +54,7 @@
                 text-align: center;
                 color: #757575;
             }
+
             .team-links {
                 display: flex;
                 width: 206px;
@@ -62,18 +63,22 @@
                 padding-top: 28px;
                 padding-left: 32px;
             }
+
             .team-link {
                 fill: #AFB1B8;
                 height: 44px;
                 width: 44px;
 
                 &:hover {
+                    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
                     fill: #FFFFFF;
                 }
 
                 &-wrapper {
                     border-radius: 50%;
+
                     &:hover {
+                        transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
                         background-color: #2196F3;
                     }
                 }
