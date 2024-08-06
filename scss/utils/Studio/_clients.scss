@@ -23,6 +23,7 @@
         height: 92px;
         border: 1px solid #AFB1B8;
         margin-bottom: 94px;
+        transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover {
             transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -36,6 +37,7 @@
     }
 
     &-svg {
+        transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
         fill: #AFB1B8;
         width: 170px;
         height: 90px;
