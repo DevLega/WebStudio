@@ -75,6 +75,7 @@
 }
 .header .contact-info .contact-info-email,
 .header .contact-info .contact-info-phone {
+  cursor: pointer;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 500;
@@ -279,6 +280,7 @@
   padding-left: 32px;
 }
 .team .team-list .team-member .team-link {
+  cursor: pointer;
   fill: #AFB1B8;
   height: 44px;
   width: 44px;

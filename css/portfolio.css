@@ -75,6 +75,7 @@
 }
 .header .contact-info .contact-info-email,
 .header .contact-info .contact-info-phone {
+  cursor: pointer;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 500;
