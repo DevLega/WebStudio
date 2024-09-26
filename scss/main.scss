@@ -8,9 +8,18 @@
 }
 
 @import 'utils/_header.scss';
+@import 'utils/_footer.scss';
+
+//STUDIO
 @import 'utils/Studio/_hero';
 @import 'utils/Studio/_features.scss';
 @import 'utils/Studio/_team.scss';
 @import 'utils/Studio/_clients.scss';
-@import 'utils/_footer.scss';
 @import 'utils/Studio/_modal.scss';
+@import 'utils/Studio/what-we-do.scss';
+
+//PORTFOLIO 
+@import 'utils/Portfolio/_portfolio.scss';
+
+//ADAPTIVE
+@import 'utils/_adaptive.scss';
