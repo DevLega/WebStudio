@@ -12,6 +12,15 @@
         width: 100%;
         justify-content: space-around;
     }
+
+    .features .features-list .features-item {
+        width: 48%;
+        margin-bottom: 30px;
+    }
+
+    .features .features-list .features-item .item-div {
+        width: 100%;
+    }
 }
 
 /* Medium: 768px - 991px */
@@ -79,18 +88,105 @@
         margin-bottom: 30px;
     }
 
+    //Portfolio 
+
+    .portfolio-list .portfolio-project {
+        width: 351px;
+    }
+
+    .project-img {
+        width: 100%;
+    }
+
 }
 
 /* Small: 576px - 767px */
 @media (max-width: 767px) {
     .container {
-        max-width: 540px;
+        width: calc(100vw - 30px);
     }
+
+    .logo-nav__wrapper {
+        width: calc(100vw - 30vw);
+    }
+
+    .hero .hero-title {
+        width: auto;
+        height: auto;
+        font-size: 26px;
+        text-transform: uppercase;
+    }
+
+
+    .features .features-list .features-item {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .features .features-list .features-item .item-div {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .services {
+        display: none;
+    }
+
+    .portfolio-list .portfolio-project {
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
 }
 
 /* Extra small: 0px (320px) - 575px */
 @media (max-width: 575px) {
-    .container {
-        padding: 0 15px;
+
+    .logo-nav__wrapper {
+        width: auto;
+    }
+
+    .header .nav {
+        display: none;
+    }
+
+    .header {
+        border-bottom: 1px solid #ECECEC;
+    }
+
+    .header .contact-info {
+        display: none;
+    }
+
+    //HERO
+
+    .hero .hero-title {
+        width: 360px;
+        font-size: 26px;
+        text-transform: uppercase;
+    }
+
+    //FEATURES
+
+    .features .features-list .features-item {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .features .features-list .features-item .item-div {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    //CLIENTS
+
+    .clients-item {
+        width: 210px;
     }
 }

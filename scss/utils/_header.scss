@@ -43,7 +43,6 @@
             }
         }
 
-
         a::before {
             content: "";
             width: 100%;
@@ -90,3 +89,13 @@
         }
     }
 }
+
+.logo-nav__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 519px;
+}
+
+//BURGER
+

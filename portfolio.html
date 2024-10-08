@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Document</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="./css/main.css">
@@ -18,14 +18,17 @@
 
     <header class="header">
         <div class="container">
-            <a href="index.html" class="logo">
-                <span class="logo-blue-text">Web</span><span class="logo-black-text">Studio</span>
-            </a>
-            <nav class="nav">
-                <a class="nav-link" href="index.html">Студія</a>
-                <a class="nav-link" href="portfolio.html">Портфоліо</a>
-                <a class="nav-link" href="#">Контакти</a>
-            </nav>
+            <div class="logo-nav__wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-blue-text">Web</span><span class="logo-black-text">Studio</span>
+                </a>
+                <nav class="nav">
+                    <a class="nav-link" href="index.html">Студія</a>
+                    <a class="nav-link" href="portfolio.html">Портфоліо</a>
+                    <a class="nav-link" href="#">Контакти</a>
+                </nav>
+            </div>
+
             <div class="contact-info">
                 <a class="contact-info-email">info@devstudio.com</a>
                 <a class="contact-info-phone">+38 096 111 11 11</a>
@@ -37,19 +40,19 @@
         <div class="container">
             <ul class="filters">
                 <li class="filters-item">
-                    <button class="item-button button-all">Усі</button>
+                    <h1 class="item-button button-all">Усі</h1>
                 </li>
                 <li class="filters-item">
-                    <button class="item-button button-web">Веб-сайти</button>
+                    <h1 class="item-button button-web">Веб-сайти</h1>
                 </li>
                 <li class="filters-item">
-                    <button class="item-button button-apps">Додатки</button>
+                    <h1 class="item-button button-apps">Додатки</h1>
                 </li>
                 <li class="filters-item">
-                    <button class="item-button button-design">Дизайн</button>
+                    <h1 class="item-button button-design">Дизайн</h1>
                 </li>
                 <li class="filters-item">
-                    <button class="item-button button-marketing">Маркетинг</button>
+                    <h1 class="item-button button-marketing">Маркетинг</h1>
                 </li>
             </ul>
             <ul class="portfolio-list">

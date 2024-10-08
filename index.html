@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Web Studio</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="./css/main.css">
@@ -18,14 +18,17 @@
 
     <header class="header">
         <div class="container">
-            <a href="index.html" class="logo">
-                <span class="logo-blue-text">Web</span><span class="logo-black-text">Studio</span>
-            </a>
-            <nav class="nav">
-                <a class="nav-link" href="index.html">Студія</a>
-                <a class="nav-link" href="portfolio.html">Портфоліо</a>
-                <a class="nav-link" href="#">Контакти</a>
-            </nav>
+            <div class="logo-nav__wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-blue-text">Web</span><span class="logo-black-text">Studio</span>
+                </a>
+                <nav class="nav">
+                    <a class="nav-link" href="index.html">Студія</a>
+                    <a class="nav-link" href="portfolio.html">Портфоліо</a>
+                    <a class="nav-link" href="#">Контакти</a>
+                </nav>
+            </div>
+
             <div class="contact-info">
                 <a class="contact-info-email">info@devstudio.com</a>
                 <a class="contact-info-phone">+38 096 111 11 11</a>
@@ -138,7 +141,7 @@
             </div>
         </div>
     </section>
-    
+
     <section class="team">
         <div class="container">
             <h1 class="team-title">Наша команда</h1>

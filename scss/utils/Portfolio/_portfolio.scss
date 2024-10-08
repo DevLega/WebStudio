@@ -5,55 +5,35 @@
     .filters {
         display: flex;
         flex-wrap: wrap;
-        width: 575px;
-        justify-content: space-between;
         list-style: none;
-        margin-left: auto;
-        margin-right: auto;
+        width: 575px;
+        margin: 0 auto;
 
         &-item {
+            padding: 5px 22px;
+            border-radius: 4px;
+            background: #F5F4FA;
+            margin: 0 auto;
+            cursor: pointer;
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+            &:hover {
+                transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+                background: #2196F3;
+                color: white;
+                box-shadow: 0px 2px 2px 0px #0000001F;
+                box-shadow: 0px 1px 2px 0px #00000014;
+                box-shadow: 0px 3px 1px 0px #0000001A;
+            }
+
             .item-button {
-                height: 38px;
-                border-radius: 4px;
                 border: none;
-                background: #F5F4FA;
                 font-family: Roboto;
                 font-size: 16px;
                 font-weight: 500;
                 line-height: 26px;
                 letter-spacing: 0.03em;
                 text-align: center;
-                cursor: pointer;
-                transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-
-                &:hover {
-                    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-                    background: #2196F3;
-                    color: white;
-                    box-shadow: 0px 2px 2px 0px #0000001F;
-                    box-shadow: 0px 1px 2px 0px #00000014;
-                    box-shadow: 0px 3px 1px 0px #0000001A;
-                }
-            }
-
-            .button-all {
-                width: 73px;
-            }
-
-            .button-web {
-                width: 125px;
-            }
-
-            .button-apps {
-                width: 112px;
-            }
-
-            .button-design {
-                width: 103px;
-            }
-
-            .button-marketing {
-                width: 130px;
             }
         }
     }

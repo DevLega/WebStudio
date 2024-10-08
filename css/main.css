@@ -1,5 +1,6 @@
 .header .container {
   display: flex;
+  justify-content: space-between;
 }
 
 .container {
@@ -89,6 +90,13 @@
   color: #2196F3;
 }
 
+.logo-nav__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 519px;
+}
+
 .footer {
   background-color: #2F303A;
   height: 252px;
@@ -161,6 +169,14 @@
   cursor: pointer;
   justify-content: center;
   align-items: center;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero .hero-button:hover {
+  transform: scale(1.02);
+  transform: translate(0, 3px);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1215686275);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.0784313725);
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1019607843);
 }
 
 .features .features-list {
@@ -224,6 +240,7 @@
   text-align: center;
 }
 .team .team-list {
+  margin: 0 auto;
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
@@ -233,6 +250,7 @@
   justify-content: space-between;
 }
 .team .team-list .team-member {
+  margin: 0 auto;
   background-color: #FFFFFF;
   width: 270px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
@@ -264,11 +282,12 @@
 }
 .team .team-list .team-member .team-links {
   display: flex;
-  width: 206px;
   height: 44px;
   justify-content: space-between;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 .team .team-list .team-member .team-link {
   cursor: pointer;
@@ -545,27 +564,19 @@
 .portfolio .filters {
   display: flex;
   flex-wrap: wrap;
-  width: 575px;
-  justify-content: space-between;
   list-style: none;
-  margin-left: auto;
-  margin-right: auto;
+  width: 575px;
+  margin: 0 auto;
 }
-.portfolio .filters-item .item-button {
-  height: 38px;
+.portfolio .filters-item {
+  padding: 5px 22px;
   border-radius: 4px;
-  border: none;
   background: #F5F4FA;
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 26px;
-  letter-spacing: 0.03em;
-  text-align: center;
+  margin: 0 auto;
   cursor: pointer;
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio .filters-item .item-button:hover {
+.portfolio .filters-item:hover {
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   background: #2196F3;
   color: white;
@@ -573,20 +584,14 @@
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.0784313725);
   box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1019607843);
 }
-.portfolio .filters-item .button-all {
-  width: 73px;
-}
-.portfolio .filters-item .button-web {
-  width: 125px;
-}
-.portfolio .filters-item .button-apps {
-  width: 112px;
-}
-.portfolio .filters-item .button-design {
-  width: 103px;
-}
-.portfolio .filters-item .button-marketing {
-  width: 130px;
+.portfolio .filters-item .item-button {
+  border: none;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
 .portfolio-list {
   margin-top: 50px;
@@ -671,6 +676,13 @@
     width: 100%;
     justify-content: space-around;
   }
+  .features .features-list .features-item {
+    width: 48%;
+    margin-bottom: 30px;
+  }
+  .features .features-list .features-item .item-div {
+    width: 100%;
+  }
 }
 /* Medium: 768px - 991px */
 @media (max-width: 991px) {
@@ -720,16 +732,77 @@
     width: 226px;
     margin-bottom: 30px;
   }
+  .portfolio-list .portfolio-project {
+    width: 351px;
+  }
+  .project-img {
+    width: 100%;
+  }
 }
 /* Small: 576px - 767px */
 @media (max-width: 767px) {
   .container {
-    max-width: 540px;
+    width: calc(100vw - 30px);
+  }
+  .logo-nav__wrapper {
+    width: 70vw;
+  }
+  .hero .hero-title {
+    width: auto;
+    height: auto;
+    font-size: 26px;
+    text-transform: uppercase;
+  }
+  .features .features-list .features-item {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .features .features-list .features-item .item-div {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .services {
+    display: none;
+  }
+  .portfolio-list .portfolio-project {
+    margin: 0 auto;
+    margin-bottom: 30px;
   }
 }
 /* Extra small: 0px (320px) - 575px */
 @media (max-width: 575px) {
-  .container {
-    padding: 0 15px;
+  .logo-nav__wrapper {
+    width: auto;
+  }
+  .header .nav {
+    display: none;
+  }
+  .header {
+    border-bottom: 1px solid #ECECEC;
+  }
+  .header .contact-info {
+    display: none;
+  }
+  .hero .hero-title {
+    width: 360px;
+    font-size: 26px;
+    text-transform: uppercase;
+  }
+  .features .features-list .features-item {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .features .features-list .features-item .item-div {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .clients-item {
+    width: 210px;
   }
 }
